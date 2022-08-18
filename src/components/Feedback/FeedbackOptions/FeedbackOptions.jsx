@@ -21,9 +21,5 @@ export default FeedbackOptions;
 
 FeedbackOptions.propTypes = {
   setFeedback: PropTypes.func.isRequired,
-  options: PropTypes.shape({
-    good: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-  }),
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
 };
