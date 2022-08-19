@@ -42,7 +42,7 @@ class App extends React.Component {
         <FeedbackSection title="Plese lieve feedback">
           <FeedbackOptions
             setFeedback={this.increment}
-            options={['good', 'neutral', 'bad']}
+            options={Object.keys(this.state)}
           />
           {total > 0 ? (
             <FeedbackStatistics

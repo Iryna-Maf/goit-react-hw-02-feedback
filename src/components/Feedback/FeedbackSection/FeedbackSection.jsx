@@ -17,5 +17,5 @@ export default FeedbackSection;
 
 FeedbackSection.propTypes = {
   title: PropTypes.string.isRequired,
-  // children: PropTypes.element.isRequired,
+  children: PropTypes.node,
 };
